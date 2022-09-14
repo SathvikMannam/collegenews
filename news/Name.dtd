@@ -1,0 +1,5 @@
+<!DOCTYPE Name [
+<!ELEMENT Name (fname,lname)>
+<!ELEMENT fname (#PCDATA)>
+<!ELEMENT lname (#PCDATA)>
+]>

@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CNews</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo" style="font-family: Rubik Maze;">CNews</div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+              <div class="menu">
+                <li><a href="login.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            
+              </div>
+            </ul>
+          </nav>
+        <div class="hero">
+            <div class="form-box">
+                <div class = "button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-button" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-button" onclick="signup()">Sign up</button>
+                </div>
+                <form id="login" class="input-group">
+                    <input type="email" class="input-field" placeholder="Email" required>
+                     
+                    <input type="password" class="input-field" placeholder="Password" required>  
+                    
+                    <buttom type="submit" class="submit-btn" >Log in</buttom>
+                </form>
+                <form id="signup" class="input-group">
+                    <input type="text" class="input-field" placeholder="First Name" required>
+                    
+                    <input type="text" class="input-field" placeholder="Last Name" required>
+
+                    <input type="email" class="input-field" placeholder="Email" required>
+
+                    <input type="password" class="input-field" placeholder="Password" required>  
+                    
+                    <buttom type="submit" class="submit-btn" >Sign up</buttom>
+                </form>
+            </div>
+        </div>
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("signup");
+            var z = document.getElementById("btn");
+
+            function signup(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left ="110px";
+            }
+
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left ="0";
+            }
+        </script>
+    </body>
+</html>
